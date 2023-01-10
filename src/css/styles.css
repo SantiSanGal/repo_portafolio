@@ -26,6 +26,7 @@
 body{
     background-color: #0F103F;
     font-family: 'Poppins', sans-serif;;
+    color: var(--PlaceHolderText);
 }
 
 div{
@@ -45,6 +46,11 @@ img{
     width: 100%;
 }
 
+h3{
+    font-size: var(--title2);
+    padding: 1rem;
+}
+
 body::-webkit-scrollbar{
     width: 10px;
     height: 10px;
@@ -62,7 +68,7 @@ body::-webkit-scrollbar-track{
 
 header{
     font-size: var(--title2);
-    color:var(--PlaceHolderText);
+    /* color:var(--PlaceHolderText); */
     font-weight: bold;
 
     height: 200px;
@@ -164,8 +170,8 @@ ul{
 
 .aboutMe h3{
     text-align: left;
-    font-size: var(--title2);
-    padding-bottom: 1rem;
+    /* font-size: var(--title2);
+    padding-bottom: 1rem; */
 }
 
 .aboutMe p{
@@ -284,19 +290,19 @@ input[type=radio]{
 }
 
 .contact-form{
-    background-color: red;
+    background-color: var(--PrimaryContainerBG);
     width: 50%;
     height: 500px;
     border-radius: 50px;
     display: flex;
     align-items: stretch;
 }
-.contact-form:nth-child(1){
-    background-color: yellow;
-}
 
 .contact-form span{
+    display: flex;
     width: 50%;
+    align-items: center;
+    justify-content: center;
 }
 
 /* FIN-CONTACT */
