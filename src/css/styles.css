@@ -304,6 +304,12 @@ input[type=radio]{
     align-items: center;
     justify-content: center;
     flex-direction: column;
+    gap: 1rem;
+    padding: 0 2rem;
+}
+
+.contact-form span p svg{
+    width: 20px;
 }
 
 /* FIN-CONTACT */
@@ -311,5 +317,5 @@ input[type=radio]{
 footer{
     height: 400px;
     width: 100%;
-    background-color: var(--SecondaryIt);
+    background-color: var(--PrimaryContainerBG);
 }
