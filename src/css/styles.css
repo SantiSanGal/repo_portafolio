@@ -15,7 +15,6 @@
     --title1:30px;
     --title2:20px;
     --Paragraf:17px;
-
     --text: #FBFCFC;
 }
 
@@ -171,7 +170,6 @@ header{
 
     margin-bottom: 0;
     right: 0;
-    /* background-color: orange; */
 }
 /* FIN_HOME */
 
@@ -338,17 +336,15 @@ input[type=radio]{
     background-color: blue;
 }
 
-.contact-form span p svg{
-    width: 20px;
+.contact-{
+    display: flex;
+    flex-direction: column;
 }
 
-.img-footer{
-    position: absolute;z-index: 2;
-    overflow: hidden;
-    width: 50vw;
-    min-width: 20vw;
-    margin-bottom: 0;
-    right: 0;
+.align{
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
 }
 
 .form-style{
@@ -372,6 +368,15 @@ textarea, input:focus{
 ::placeholder{
     color: var(--text);
     font-family: 'Poppins', sans-serif;
+}
+
+.img-footer{
+    position: absolute;z-index: 2;
+    overflow: hidden;
+    width: 50vw;
+    min-width: 20vw;
+    margin-bottom: 0;
+    right: 0;
 }
 
 /* FIN-CONTACT */
@@ -429,6 +434,15 @@ footer{
 }
 .fa-youtube{
     background-color: #FF0000;
+}
+
+.icon{
+    width: 50px;
+    height: 50px;
+    background-color: var(--PlaceHolderText);
+    border-radius: 30px;
+    display: grid;
+    place-content: center;
 }
 
 @media screen and (max-width: 600px) {
