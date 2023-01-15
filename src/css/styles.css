@@ -265,35 +265,67 @@ header{
 .aboutMe{
     display: grid;
     place-content: center;
-}
-
-.aboutMe-text{
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: flex-start;
-    position: relative;z-index: 2;
-    margin: -1rem 0 6rem 3rem;
+    position: absolute;z-index: 3;
+    margin-top: -10rem;
+    margin-left: 10rem;
 }
 
 .aboutMe h3{
     text-align: left;
-    font-size: var(--title2);
+    font-size: var(--title1);
     padding-bottom: 1rem;
 }
 
 .aboutMe p{
     text-align: left;
-    font-size: var(--Paragraf);
+    font-size: var(--title2);
     max-width: 15vw;
+    max-height: 30vh;
 }
 
 .img-container-about{
-    position: absolute;z-index: 1;
+    position: absolute;z-index: 0;
     align-self: center;
-    width: 50vw;
+    width: 65vw;
 }
 
+.img-container-about img{
+    width: 100%;
+}
+
+@media screen and (max-width: 1450px) {
+    .aboutMe{
+        margin-top: -15rem;
+        margin-left: 5rem;
+    }
+
+    .aboutMe p{
+        font-size: var(--Paragraf);
+        max-width: 20vw;
+    }
+
+    .img-container-about{
+        width: 90vw;
+    }
+}
+
+@media screen and (max-width: 850px) {
+    #about{
+        height: 150vh;
+        overflow: hidden;
+    }
+    
+    .aboutMe p{
+        text-align: left;
+        font-size: var(--Paragraf);
+        max-width: 50vw;
+        max-height: 30vh;
+    }
+
+    .img-container-about{
+        width: 200vw;
+    }
+}
 
 /* FIN_ABOUT_ME */
 
