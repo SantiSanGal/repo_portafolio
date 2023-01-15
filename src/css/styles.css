@@ -291,6 +291,7 @@ header{
 
 .img-container-about img{
     width: 100%;
+    overflow: hidden;
 }
 
 @media screen and (max-width: 1450px) {
@@ -306,6 +307,7 @@ header{
 
     .img-container-about{
         width: 90vw;
+        overflow: hidden;
     }
 }
 
@@ -314,7 +316,7 @@ header{
         height: 150vh;
         overflow: hidden;
     }
-    
+
     .aboutMe p{
         text-align: left;
         font-size: var(--Paragraf);
@@ -324,6 +326,7 @@ header{
 
     .img-container-about{
         width: 200vw;
+        overflow: hidden;
     }
 }
 
