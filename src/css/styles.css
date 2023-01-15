@@ -133,13 +133,15 @@ header{
         position: absolute;z-index: 3;
         width: 300px;
         margin-top: -300px; 
-        margin-left: -170px;
+        margin-left: -150px;
+        overflow: hidden;
     }
 
     header{
         display: flex;
         justify-content: center;
         padding: 0;
+        overflow: hidden;
     }
 
     .navbar-header{
@@ -153,6 +155,12 @@ header{
         flex-direction: column;
         padding: 1rem;
         margin-right: 5rem;
+
+        transform: translateY(-100%);
+    }
+
+    .navbar-header--show{
+        transform: translateY(0);
     }
 
     .navbar-header ul li{
