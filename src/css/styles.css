@@ -185,22 +185,15 @@ header{
     right: 0;
 }
 
-@media screen and (max-width: 600px){
+@media screen and (max-width: 700px){
     .home-text{
-        font-size: var(--title1);
         width: 100%;
     }
 
-    .buttom{
-        width: 100px;
-        height: 25px;
-        font-size: var(--mediaText);
-    }
     .img-container-home{
         display: none;
     }
 }
-
 /* FIN_HOME */
 
 /* ABOUT_ME */
@@ -430,23 +423,19 @@ textarea, input:focus{
     #contact{
         display: grid;
         place-content: center;
-        height: 180vh;
+        height: 200vh;
     }
 
     .contact-form{
         flex-direction: column;
-        width: 85%;
-        height: 100%;
-        margin: auto;
+        width: 95vw;
+        height: 130vh;
+        margin: 200px auto;
+        position:relative;z-index: 4;
     }
+    
     .contact-form span{
         width: 100%;
-    }
-
-    .text-contact-icons{
-        background-color: var(--PlaceHolderText);
-        display: grid;
-        place-content: center;
     }
 
     .input-form{
@@ -460,10 +449,11 @@ textarea, input:focus{
     }
 
     .img-footer{
-        position: absolute;z-index: 2;
+        position: relative;z-index: 2;
         width: 200vw;
-        margin-bottom: -950px;
-        margin-right: -400px;
+        margin-bottom: 200px;
+        margin-right: -200px;
+        overflow: hidden;
     }
 }
 
@@ -474,7 +464,7 @@ footer{
     height: 300px;
     width: 100%;
     background-color: var(--PrimaryContainerBG);
-    position: absolute;z-index: 1;
+    position: absolute;z-index: 0;
     display: flex;
     flex-direction: column;
     gap: 2rem;
@@ -525,5 +515,17 @@ footer{
 }
 
 @media screen and (max-width: 600px) {
-    
+    footer{
+        height: 70vh;
+        /* gap: 2rem; */
+        align-items: flex-start;
+        justify-content: center;
+        z-index: 1;
+    }
+
+    .footer-nav-our{
+        display: flex;
+        flex-direction: column;
+        margin-top: 0;
+    }
 }
