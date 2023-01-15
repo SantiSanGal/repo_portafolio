@@ -113,7 +113,7 @@ header{
 }
 
 
-@media screen and (min-width: 600px){
+@media screen and (min-width: 601px){
     .toggle-menu{
         display: none;
     }
@@ -155,11 +155,13 @@ header{
         flex-direction: column;
         padding: 1rem;
         margin-right: 5rem;
+    }
 
+    .main-menu{
         transform: translateY(-100%);
     }
 
-    .navbar-header--show{
+    .main-menu--show{
         transform: translateY(0);
     }
 
