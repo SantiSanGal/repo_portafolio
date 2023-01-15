@@ -94,6 +94,7 @@ header{
 .cont-img-header{
     justify-content: flex-start;
     width: 20%;
+    min-width: 250px;
 }
 
 .navbar{
@@ -108,6 +109,16 @@ header{
     justify-content: space-around;
     list-style: none;
 }
+
+@media screen and (max-width: 600px){
+    .cont-img-header{
+        position: relative;z-index: 3;
+        width: 250px;
+        margin-top: -100px;
+        margin-left: -300px;
+    } 
+}
+
 /* FIN_HEADER */
 
 /* HOME */
@@ -171,6 +182,23 @@ header{
     margin-bottom: 0;
     right: 0;
 }
+
+@media screen and (max-width: 600px){
+    .home-text{
+        font-size: var(--title1);
+        width: 100%;
+    }
+
+    .buttom{
+        width: 100px;
+        height: 25px;
+        font-size: 10px;
+    }
+    .img-container-home{
+        display: none;
+    }
+}
+
 /* FIN_HOME */
 
 /* ABOUT_ME */
@@ -213,6 +241,8 @@ header{
     align-self: center;
     width: 50vw;
 }
+
+
 /* FIN_ABOUT_ME */
 
 /* MY_WORK */  
@@ -315,7 +345,7 @@ input[type=radio]{
     box-shadow: 1px 2px var(--SubtleBorder);
     width: 50vw;
     height: 60%;
-    padding: 3rem;
+    padding: 2rem;
     border-radius: 50px;
     display: flex;
     align-items: stretch;
@@ -328,7 +358,6 @@ input[type=radio]{
     align-items: flex-start;
     justify-content: center;
     flex-direction: column;
-    /* gap: 1rem; */
     padding: 0 2rem;
 }
 
@@ -383,6 +412,10 @@ textarea, input:focus{
     min-width: 20vw;
     margin-bottom: 0;
     right: 0;
+}
+
+@media screen and (max-width: 600px){
+    
 }
 
 /* FIN-CONTACT */
@@ -452,7 +485,5 @@ footer{
 }
 
 @media screen and (max-width: 600px) {
-    body {
-        background-color: olive;
-    }
+    
 }
